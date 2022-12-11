@@ -26,7 +26,7 @@ def click():
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
         }
 
-        r = requests.get(f"https://playabledownload.com/show.php?l=0&u=1021958&id=48179&tracking_id=", headers=headers, proxies=proxies)
+        r = requests.get(f"https://dsc.gg/{code}", headers=headers, proxies=proxies)
         stats.hits += 1
     except:
         stats.failed += 1
